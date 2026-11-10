@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bedroom",
+    "name": {
+      "en": "Bedroom",
+      "th": "ห้องนอน",
+      "zh": "卧室"
+    },
+    "blurb": {
+      "en": "Restful spaces to wind down",
+      "th": "พื้นที่พักผ่อนให้ผ่อนคลาย",
+      "zh": "放松身心的休憩空间"
+    },
+    "gradient": "linear-gradient(135deg,#e9e1d4,#c9b79c)"
+  },
+  {
+    "id": "living-room",
+    "name": {
+      "en": "Living room",
+      "th": "ห้องนั่งเล่น",
+      "zh": "客厅"
+    },
+    "blurb": {
+      "en": "Gather, lounge and unwind",
+      "th": "รวมตัว นั่งเล่น และพักผ่อน",
+      "zh": "相聚、休闲与放松"
+    },
+    "gradient": "linear-gradient(135deg,#dfe6dc,#9aab92)"
+  },
+  {
+    "id": "dining",
+    "name": {
+      "en": "Dining",
+      "th": "ห้องทานอาหาร",
+      "zh": "餐厅"
+    },
+    "blurb": {
+      "en": "Tables for every occasion",
+      "th": "โต๊ะสำหรับทุกโอกาส",
+      "zh": "适合各种场合的餐桌"
+    },
+    "gradient": "linear-gradient(135deg,#f0dfd2,#c98b6b)"
+  },
+  {
+    "id": "home-office",
+    "name": {
+      "en": "Home office",
+      "th": "ห้องทำงาน",
+      "zh": "家庭办公室"
+    },
+    "blurb": {
+      "en": "Focus-friendly work corners",
+      "th": "มุมทำงานที่ช่วยให้มีสมาธิ",
+      "zh": "助你专注的工作角"
+    },
+    "gradient": "linear-gradient(135deg,#dde3ea,#6b8fa8)"
+  },
+  {
+    "id": "kids",
+    "name": {
+      "en": "Kids room",
+      "th": "ห้องเด็ก",
+      "zh": "儿童房"
+    },
+    "blurb": {
+      "en": "Playful and practical",
+      "th": "สนุกและใช้งานได้จริง",
+      "zh": "有趣又实用"
+    },
+    "gradient": "linear-gradient(135deg,#f5ecc8,#e0b75a)"
+  }
+]

@@ -1,0 +1,1776 @@
+[
+  {
+    "kind": "empty",
+    "spec": {
+      "id": "empty",
+      "name": {
+        "en": "Empty room",
+        "th": "ห้องเปล่า",
+        "zh": "空房间"
+      },
+      "area": null,
+      "zones": [
+        {
+          "id": "room",
+          "kind": "room",
+          "name": {
+            "en": "Room",
+            "th": "ห้อง",
+            "zh": "房间"
+          },
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "at": [
+            2,
+            0
+          ],
+          "width": 1.6,
+          "sill": 0.9,
+          "height": 1.3
+        },
+        {
+          "type": "door",
+          "at": [
+            3.25,
+            4
+          ],
+          "width": 0.9
+        }
+      ],
+      "fixtures": [],
+      "ceiling": 2.6,
+      "resizable": {
+        "w": 4,
+        "d": 4
+      }
+    }
+  },
+  {
+    "kind": "unit",
+    "spec": {
+      "id": "1br-30",
+      "name": {
+        "en": "1 Bedroom 30 m²",
+        "th": "1 ห้องนอน 30 ตร.ม.",
+        "zh": "一室 30 m²"
+      },
+      "area": 30,
+      "zones": [
+        {
+          "id": "bath",
+          "kind": "bath",
+          "name": {
+            "en": "Bathroom",
+            "th": "ห้องน้ำ",
+            "zh": "浴室"
+          },
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1.6,
+              0
+            ],
+            [
+              1.6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "kitchen",
+          "kind": "kitchen",
+          "name": {
+            "en": "Kitchen",
+            "th": "ครัว",
+            "zh": "厨房"
+          },
+          "polygon": [
+            [
+              1.6,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              1.6,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "living",
+          "kind": "room",
+          "name": {
+            "en": "Living room",
+            "th": "ห้องนั่งเล่น",
+            "zh": "客厅"
+          },
+          "polygon": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "bedroom",
+          "kind": "room",
+          "name": {
+            "en": "Bedroom",
+            "th": "ห้องนอน",
+            "zh": "卧室"
+          },
+          "polygon": [
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "balcony",
+          "kind": "balcony",
+          "name": {
+            "en": "Balcony",
+            "th": "ระเบียง",
+            "zh": "阳台"
+          },
+          "polygon": [
+            [
+              0,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        }
+      ],
+      "open": [
+        [
+          [
+            1.6,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "at": [
+            2.3,
+            0
+          ],
+          "width": 0.9
+        },
+        {
+          "type": "door",
+          "at": [
+            1.6,
+            1.4
+          ],
+          "width": 0.7
+        },
+        {
+          "type": "door",
+          "at": [
+            3,
+            2.6
+          ],
+          "width": 0.8
+        },
+        {
+          "type": "slider",
+          "at": [
+            1.5,
+            4
+          ],
+          "width": 2
+        },
+        {
+          "type": "window",
+          "at": [
+            4.5,
+            4
+          ],
+          "width": 1.6,
+          "sill": 0.5,
+          "height": 1.7
+        },
+        {
+          "type": "window",
+          "at": [
+            6,
+            2
+          ],
+          "width": 1.2,
+          "sill": 0.9,
+          "height": 1.2
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "shower",
+          "type": "shower",
+          "x": 0.51,
+          "z": 0.51,
+          "rot": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "h": 2
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x": 0.41,
+          "z": 1.55,
+          "rot": 1.5707963267948966,
+          "w": 0.4,
+          "d": 0.7,
+          "h": 0.8
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x": 1.25,
+          "z": 0.285,
+          "rot": 0,
+          "w": 0.5,
+          "d": 0.45,
+          "h": 0.85
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "x": 2.64,
+          "z": 1.32,
+          "rot": -1.5707963267948966,
+          "w": 1.3,
+          "d": 0.6,
+          "h": 0.9
+        }
+      ],
+      "ceiling": 2.6
+    }
+  },
+  {
+    "kind": "unit",
+    "spec": {
+      "id": "1br-32",
+      "name": {
+        "en": "1 Bedroom 32 m²",
+        "th": "1 ห้องนอน 32 ตร.ม.",
+        "zh": "一室 32 m²"
+      },
+      "area": 32,
+      "zones": [
+        {
+          "id": "bath",
+          "kind": "bath",
+          "name": {
+            "en": "Bathroom",
+            "th": "ห้องน้ำ",
+            "zh": "浴室"
+          },
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1.8,
+              0
+            ],
+            [
+              1.8,
+              2.2
+            ],
+            [
+              0,
+              2.2
+            ]
+          ]
+        },
+        {
+          "id": "kitchen",
+          "kind": "kitchen",
+          "name": {
+            "en": "Kitchen",
+            "th": "ครัว",
+            "zh": "厨房"
+          },
+          "polygon": [
+            [
+              1.8,
+              0
+            ],
+            [
+              3.4,
+              0
+            ],
+            [
+              3.4,
+              2.2
+            ],
+            [
+              1.8,
+              2.2
+            ]
+          ]
+        },
+        {
+          "id": "living",
+          "kind": "room",
+          "name": {
+            "en": "Living room",
+            "th": "ห้องนั่งเล่น",
+            "zh": "客厅"
+          },
+          "polygon": [
+            [
+              0,
+              2.2
+            ],
+            [
+              3.4,
+              2.2
+            ],
+            [
+              3.4,
+              4.4
+            ],
+            [
+              0,
+              4.4
+            ]
+          ]
+        },
+        {
+          "id": "bedroom",
+          "kind": "room",
+          "name": {
+            "en": "Bedroom",
+            "th": "ห้องนอน",
+            "zh": "卧室"
+          },
+          "polygon": [
+            [
+              3.4,
+              0
+            ],
+            [
+              6.4,
+              0
+            ],
+            [
+              6.4,
+              4.4
+            ],
+            [
+              3.4,
+              4.4
+            ]
+          ]
+        },
+        {
+          "id": "balcony",
+          "kind": "balcony",
+          "name": {
+            "en": "Balcony",
+            "th": "ระเบียง",
+            "zh": "阳台"
+          },
+          "polygon": [
+            [
+              3.4,
+              4.4
+            ],
+            [
+              6.4,
+              4.4
+            ],
+            [
+              6.4,
+              5.4
+            ],
+            [
+              3.4,
+              5.4
+            ]
+          ]
+        }
+      ],
+      "open": [
+        [
+          [
+            1.8,
+            2.2
+          ],
+          [
+            3.4,
+            2.2
+          ]
+        ]
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "at": [
+            2.6,
+            0
+          ],
+          "width": 0.9
+        },
+        {
+          "type": "door",
+          "at": [
+            1.3,
+            2.2
+          ],
+          "width": 0.7
+        },
+        {
+          "type": "door",
+          "at": [
+            3.4,
+            3
+          ],
+          "width": 0.8
+        },
+        {
+          "type": "window",
+          "at": [
+            1.7,
+            4.4
+          ],
+          "width": 2,
+          "sill": 0.5,
+          "height": 1.7
+        },
+        {
+          "type": "slider",
+          "at": [
+            4.9,
+            4.4
+          ],
+          "width": 1.8
+        },
+        {
+          "type": "window",
+          "at": [
+            6.4,
+            1.6
+          ],
+          "width": 1.2,
+          "sill": 0.9,
+          "height": 1.2
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "shower",
+          "type": "shower",
+          "x": 0.51,
+          "z": 0.51,
+          "rot": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "h": 2
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x": 0.41,
+          "z": 1.6,
+          "rot": 1.5707963267948966,
+          "w": 0.4,
+          "d": 0.7,
+          "h": 0.8
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x": 1.35,
+          "z": 0.285,
+          "rot": 0,
+          "w": 0.5,
+          "d": 0.45,
+          "h": 0.85
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "x": 3.04,
+          "z": 1.45,
+          "rot": -1.5707963267948966,
+          "w": 1.38,
+          "d": 0.6,
+          "h": 0.9
+        },
+        {
+          "id": "fridge",
+          "type": "fridge",
+          "x": 2.19,
+          "z": 1.7,
+          "rot": 1.5707963267948966,
+          "w": 0.6,
+          "d": 0.65,
+          "h": 1.7
+        }
+      ],
+      "ceiling": 2.6
+    }
+  },
+  {
+    "kind": "unit",
+    "spec": {
+      "id": "2br-65",
+      "name": {
+        "en": "2 Bedrooms 65 m²",
+        "th": "2 ห้องนอน 65 ตร.ม.",
+        "zh": "两室 65 m²"
+      },
+      "area": 65,
+      "zones": [
+        {
+          "id": "bedroom2",
+          "kind": "room",
+          "name": {
+            "en": "Bedroom 2",
+            "th": "ห้องนอน 2",
+            "zh": "次卧"
+          },
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              3.4,
+              0
+            ],
+            [
+              3.4,
+              3.6
+            ],
+            [
+              0,
+              3.6
+            ]
+          ]
+        },
+        {
+          "id": "bath2",
+          "kind": "bath",
+          "name": {
+            "en": "Bathroom 2",
+            "th": "ห้องน้ำ 2",
+            "zh": "浴室 2"
+          },
+          "polygon": [
+            [
+              3.4,
+              0
+            ],
+            [
+              5.2,
+              0
+            ],
+            [
+              5.2,
+              2.2
+            ],
+            [
+              3.4,
+              2.2
+            ]
+          ]
+        },
+        {
+          "id": "kitchen",
+          "kind": "kitchen",
+          "name": {
+            "en": "Kitchen",
+            "th": "ครัว",
+            "zh": "厨房"
+          },
+          "polygon": [
+            [
+              5.2,
+              0
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              9,
+              2.2
+            ],
+            [
+              5.2,
+              2.2
+            ]
+          ]
+        },
+        {
+          "id": "master",
+          "kind": "room",
+          "name": {
+            "en": "Master bedroom",
+            "th": "ห้องนอนใหญ่",
+            "zh": "主卧"
+          },
+          "polygon": [
+            [
+              0,
+              3.6
+            ],
+            [
+              3.4,
+              3.6
+            ],
+            [
+              3.4,
+              6.4
+            ],
+            [
+              0,
+              6.4
+            ]
+          ]
+        },
+        {
+          "id": "living",
+          "kind": "room",
+          "name": {
+            "en": "Living & dining",
+            "th": "นั่งเล่นและทานอาหาร",
+            "zh": "客餐厅"
+          },
+          "polygon": [
+            [
+              3.4,
+              2.2
+            ],
+            [
+              9,
+              2.2
+            ],
+            [
+              9,
+              6.4
+            ],
+            [
+              5.2,
+              6.4
+            ],
+            [
+              5.2,
+              5
+            ],
+            [
+              3.4,
+              5
+            ]
+          ]
+        },
+        {
+          "id": "bath",
+          "kind": "bath",
+          "name": {
+            "en": "Bathroom",
+            "th": "ห้องน้ำ",
+            "zh": "浴室"
+          },
+          "polygon": [
+            [
+              3.4,
+              5
+            ],
+            [
+              5.2,
+              5
+            ],
+            [
+              5.2,
+              6.4
+            ],
+            [
+              3.4,
+              6.4
+            ]
+          ]
+        },
+        {
+          "id": "balcony",
+          "kind": "balcony",
+          "name": {
+            "en": "Balcony",
+            "th": "ระเบียง",
+            "zh": "阳台"
+          },
+          "polygon": [
+            [
+              5.2,
+              6.4
+            ],
+            [
+              9,
+              6.4
+            ],
+            [
+              9,
+              7.6
+            ],
+            [
+              5.2,
+              7.6
+            ]
+          ]
+        }
+      ],
+      "open": [
+        [
+          [
+            5.2,
+            2.2
+          ],
+          [
+            9,
+            2.2
+          ]
+        ]
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "at": [
+            8.2,
+            0
+          ],
+          "width": 0.95
+        },
+        {
+          "type": "door",
+          "at": [
+            4.3,
+            2.2
+          ],
+          "width": 0.75
+        },
+        {
+          "type": "door",
+          "at": [
+            3.4,
+            2.9
+          ],
+          "width": 0.8
+        },
+        {
+          "type": "door",
+          "at": [
+            3.4,
+            4.3
+          ],
+          "width": 0.8
+        },
+        {
+          "type": "door",
+          "at": [
+            4.6,
+            5
+          ],
+          "width": 0.7
+        },
+        {
+          "type": "slider",
+          "at": [
+            7.1,
+            6.4
+          ],
+          "width": 2.4
+        },
+        {
+          "type": "window",
+          "at": [
+            0,
+            1.8
+          ],
+          "width": 1.4,
+          "sill": 0.9,
+          "height": 1.2
+        },
+        {
+          "type": "window",
+          "at": [
+            0,
+            5
+          ],
+          "width": 1.6,
+          "sill": 0.6,
+          "height": 1.5
+        },
+        {
+          "type": "window",
+          "at": [
+            1.7,
+            6.4
+          ],
+          "width": 1.4,
+          "sill": 0.9,
+          "height": 1.2
+        },
+        {
+          "type": "window",
+          "at": [
+            9,
+            1.1
+          ],
+          "width": 1,
+          "sill": 1.1,
+          "height": 0.9
+        },
+        {
+          "type": "window",
+          "at": [
+            9,
+            4.3
+          ],
+          "width": 1.8,
+          "sill": 0.5,
+          "height": 1.7
+        }
+      ],
+      "fixtures": [
+        {
+          "id": "shower2",
+          "type": "shower",
+          "x": 3.91,
+          "z": 0.51,
+          "rot": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "h": 2
+        },
+        {
+          "id": "toilet2",
+          "type": "toilet",
+          "x": 4.79,
+          "z": 0.6,
+          "rot": -1.5707963267948966,
+          "w": 0.4,
+          "d": 0.7,
+          "h": 0.8
+        },
+        {
+          "id": "basin2",
+          "type": "basin",
+          "x": 3.685,
+          "z": 1.6,
+          "rot": 1.5707963267948966,
+          "w": 0.5,
+          "d": 0.45,
+          "h": 0.85
+        },
+        {
+          "id": "shower",
+          "type": "shower",
+          "x": 3.91,
+          "z": 5.89,
+          "rot": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "h": 2
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x": 4.75,
+          "z": 5.99,
+          "rot": 3.141592653589793,
+          "w": 0.4,
+          "d": 0.7,
+          "h": 0.8
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "x": 6.43,
+          "z": 0.36,
+          "rot": 0,
+          "w": 2.34,
+          "d": 0.6,
+          "h": 0.9
+        },
+        {
+          "id": "fridge",
+          "type": "fridge",
+          "x": 5.59,
+          "z": 1.45,
+          "rot": 1.5707963267948966,
+          "w": 0.6,
+          "d": 0.65,
+          "h": 1.7
+        }
+      ],
+      "ceiling": 2.6
+    }
+  },
+  {
+    "kind": "showroom",
+    "spec": {
+      "id": "bedroom-calm",
+      "name": {
+        "en": "Calm Scandinavian bedroom",
+        "th": "ห้องนอนสแกนดิเนเวียนสงบ",
+        "zh": "宁静北欧风卧室"
+      },
+      "area": 14,
+      "zones": [
+        {
+          "id": "room",
+          "kind": "room",
+          "name": {
+            "en": "Bedroom",
+            "th": "ห้องนอน",
+            "zh": "卧室"
+          },
+          "polygon": [
+            [
+              -0.06,
+              -0.06
+            ],
+            [
+              4.06,
+              -0.06
+            ],
+            [
+              4.06,
+              3.56
+            ],
+            [
+              -0.06,
+              3.56
+            ]
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "at": [
+            2,
+            -0.06
+          ],
+          "width": 1.4,
+          "height": 1.3,
+          "sill": 0.9
+        },
+        {
+          "type": "door",
+          "at": [
+            3.25,
+            3.56
+          ],
+          "width": 0.9,
+          "height": 2.1
+        }
+      ],
+      "fixtures": [],
+      "ceiling": 2.6,
+      "showroom": {
+        "type": "bedroom",
+        "description": {
+          "en": "Soft neutrals, light birch and a cosy reading corner.",
+          "th": "โทนสีกลางนุ่มนวล ไม้เบิร์ชสีอ่อน และมุมอ่านหนังสือแสนอบอุ่น",
+          "zh": "柔和中性色、浅色桦木和温馨的阅读角。"
+        },
+        "thumbnail": "linear-gradient(135deg,#efe9df,#d6c6aa)",
+        "floor": {
+          "material": "wood",
+          "color": "#c9a77c"
+        },
+        "wall": {
+          "material": "paint",
+          "color": "#ede8e0"
+        },
+        "items": [
+          {
+            "itemId": "bed-linna-double",
+            "x": 2.95,
+            "z": 1.75,
+            "rot": -1.5707963267948966
+          },
+          {
+            "itemId": "nightstand-pip",
+            "x": 3.78,
+            "z": 0.6,
+            "rot": -1.5707963267948966
+          },
+          {
+            "itemId": "nightstand-pip",
+            "x": 3.78,
+            "z": 2.9,
+            "rot": -1.5707963267948966
+          },
+          {
+            "itemId": "wardrobe-fjell",
+            "x": 0.29,
+            "z": 1.2,
+            "rot": 1.5707963267948966
+          },
+          {
+            "itemId": "rug-tova",
+            "x": 2.1,
+            "z": 1.75,
+            "rot": 1.5707963267948966
+          },
+          {
+            "itemId": "plant-fiddle",
+            "x": 0.4,
+            "z": 0.4,
+            "rot": 0,
+            "colorId": "terracotta"
+          },
+          {
+            "itemId": "art-horizon",
+            "x": 3.985,
+            "z": 1.75,
+            "rot": -1.5707963267948966
+          },
+          {
+            "itemId": "lamp-glow-pendant",
+            "x": 2,
+            "z": 1.75,
+            "rot": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "kind": "showroom",
+    "spec": {
+      "id": "bedroom-dusk",
+      "name": {
+        "en": "Dusky green retreat",
+        "th": "ห้องนอนโทนเขียวหม่น",
+        "zh": "暮绿静居"
+      },
+      "area": 16.7,
+      "zones": [
+        {
+          "id": "room",
+          "kind": "room",
+          "name": {
+            "en": "Bedroom",
+            "th": "ห้องนอน",
+            "zh": "卧室"
+          },
+          "polygon": [
+            [
+              -0.06,
+              -0.06
+            ],
+            [
+              4.46,
+              -0.06
+            ],
+            [
+              4.46,
+              3.86
+            ],
+            [
+              -0.06,
+              3.86
+            ]
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "at": [
+            4.46,
+            2
+          ],
+          "width": 1.6,
+          "height": 1.4,
+          "sill": 0.8
+        },
+        {
+          "type": "door",
+          "at": [
+            0.75,
+            3.86
+          ],
+          "width": 0.9,
+          "height": 2.1
+        }
+      ],
+      "fixtures": [],
+      "ceiling": 2.6,
+      "showroom": {
+        "type": "bedroom",
+        "description": {
+          "en": "Deep sage walls with walnut accents.",
+          "th": "ผนังสีเขียวเสจเข้มตัดกับไม้วอลนัท",
+          "zh": "深鼠尾草绿墙面搭配胡桃木点缀。"
+        },
+        "thumbnail": "linear-gradient(135deg,#a8b5a0,#5e6b58)",
+        "floor": {
+          "material": "wood",
+          "color": "#6e4b32"
+        },
+        "wall": {
+          "material": "paint",
+          "color": "#a8b5a0"
+        },
+        "items": [
+          {
+            "itemId": "bed-haven-king",
+            "x": 2.2,
+            "z": 1.075,
+            "rot": 0,
+            "colorId": "charcoal"
+          },
+          {
+            "itemId": "nightstand-pip",
+            "x": 0.9,
+            "z": 0.2,
+            "rot": 0,
+            "colorId": "walnut"
+          },
+          {
+            "itemId": "nightstand-pip",
+            "x": 3.5,
+            "z": 0.2,
+            "rot": 0,
+            "colorId": "walnut"
+          },
+          {
+            "itemId": "dresser-rau",
+            "x": 2.6,
+            "z": 3.56,
+            "rot": 3.141592653589793,
+            "colorId": "walnut"
+          },
+          {
+            "itemId": "chair-mjuk-arm",
+            "x": 3.6,
+            "z": 3,
+            "rot": 3.9269908169872414
+          },
+          {
+            "itemId": "lamp-arc-floor",
+            "x": 4.1,
+            "z": 3.5,
+            "rot": 0,
+            "colorId": "brass"
+          },
+          {
+            "itemId": "mirror-oval",
+            "x": 2.6,
+            "z": 3.785,
+            "rot": 3.141592653589793,
+            "colorId": "brass"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "kind": "showroom",
+    "spec": {
+      "id": "living-airy",
+      "name": {
+        "en": "Airy family living room",
+        "th": "ห้องนั่งเล่นครอบครัวโปร่งสบาย",
+        "zh": "通透的家庭客厅"
+      },
+      "area": 21.8,
+      "zones": [
+        {
+          "id": "room",
+          "kind": "room",
+          "name": {
+            "en": "Living room",
+            "th": "ห้องนั่งเล่น",
+            "zh": "客厅"
+          },
+          "polygon": [
+            [
+              -0.06,
+              -0.06
+            ],
+            [
+              5.26,
+              -0.06
+            ],
+            [
+              5.26,
+              4.26
+            ],
+            [
+              -0.06,
+              4.26
+            ]
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "at": [
+            2.1,
+            -0.06
+          ],
+          "width": 2.2,
+          "height": 1.6,
+          "sill": 0.6
+        },
+        {
+          "type": "door",
+          "at": [
+            -0.06,
+            3.35
+          ],
+          "width": 0.9,
+          "height": 2.1
+        }
+      ],
+      "fixtures": [],
+      "ceiling": 2.6,
+      "showroom": {
+        "type": "living-room",
+        "description": {
+          "en": "A generous sofa, soft rug and plenty of plants.",
+          "th": "โซฟาตัวใหญ่ พรมนุ่ม และต้นไม้มากมาย",
+          "zh": "宽大的沙发、柔软的地毯和许多绿植。"
+        },
+        "thumbnail": "linear-gradient(135deg,#eef0ea,#b9c4b0)",
+        "floor": {
+          "material": "wood",
+          "color": "#c9a77c"
+        },
+        "wall": {
+          "material": "paint",
+          "color": "#f2f1ec"
+        },
+        "items": [
+          {
+            "itemId": "sofa-vila-3",
+            "x": 2.6,
+            "z": 3.75,
+            "rot": 3.141592653589793
+          },
+          {
+            "itemId": "rug-mira-round",
+            "x": 2.6,
+            "z": 2.5,
+            "rot": 0,
+            "colorId": "sage"
+          },
+          {
+            "itemId": "coffee-table-rund",
+            "x": 2.6,
+            "z": 2.5,
+            "rot": 0
+          },
+          {
+            "itemId": "chair-mjuk-arm",
+            "x": 1,
+            "z": 2.3,
+            "rot": 1.5707963267948966
+          },
+          {
+            "itemId": "bookcase-stav",
+            "x": 5.05,
+            "z": 2,
+            "rot": -1.5707963267948966
+          },
+          {
+            "itemId": "plant-fiddle",
+            "x": 4.7,
+            "z": 0.4,
+            "rot": 0
+          },
+          {
+            "itemId": "lamp-arc-floor",
+            "x": 4,
+            "z": 3.8,
+            "rot": 0
+          },
+          {
+            "itemId": "art-horizon",
+            "x": 2.6,
+            "z": 4.185,
+            "rot": 3.141592653589793,
+            "colorId": "sea"
+          },
+          {
+            "itemId": "shelf-lift",
+            "x": 5.09,
+            "z": 3.3,
+            "rot": -1.5707963267948966
+          }
+        ]
+      }
+    }
+  },
+  {
+    "kind": "showroom",
+    "spec": {
+      "id": "dining-warm",
+      "name": {
+        "en": "Warm dining nook",
+        "th": "มุมทานอาหารอบอุ่น",
+        "zh": "温馨用餐角"
+      },
+      "area": 14.4,
+      "zones": [
+        {
+          "id": "room",
+          "kind": "room",
+          "name": {
+            "en": "Dining",
+            "th": "ห้องทานอาหาร",
+            "zh": "餐厅"
+          },
+          "polygon": [
+            [
+              -0.06,
+              -0.06
+            ],
+            [
+              4.06,
+              -0.06
+            ],
+            [
+              4.06,
+              3.66
+            ],
+            [
+              -0.06,
+              3.66
+            ]
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "at": [
+            2,
+            -0.06
+          ],
+          "width": 1.6,
+          "height": 1.3,
+          "sill": 0.9
+        },
+        {
+          "type": "door",
+          "at": [
+            4.06,
+            2.85
+          ],
+          "width": 0.9,
+          "height": 2.1
+        }
+      ],
+      "fixtures": [],
+      "ceiling": 2.6,
+      "showroom": {
+        "type": "dining",
+        "description": {
+          "en": "Terracotta tones around a dining table for four.",
+          "th": "โทนสีดินเผารอบโต๊ะทานอาหารสี่ที่นั่ง",
+          "zh": "陶土色调环绕四人餐桌。"
+        },
+        "thumbnail": "linear-gradient(135deg,#f0dfd2,#c98b6b)",
+        "floor": {
+          "material": "tile",
+          "color": "#b9b9b5"
+        },
+        "wall": {
+          "material": "paint",
+          "color": "#e9d8c8"
+        },
+        "items": [
+          {
+            "itemId": "table-ek-dining",
+            "x": 2,
+            "z": 1.8,
+            "rot": 0
+          },
+          {
+            "itemId": "chair-sit",
+            "x": 1.5,
+            "z": 1.1,
+            "rot": 0
+          },
+          {
+            "itemId": "chair-sit",
+            "x": 2.5,
+            "z": 1.1,
+            "rot": 0
+          },
+          {
+            "itemId": "chair-sit",
+            "x": 1.5,
+            "z": 2.5,
+            "rot": 3.141592653589793
+          },
+          {
+            "itemId": "chair-sit",
+            "x": 2.5,
+            "z": 2.5,
+            "rot": 3.141592653589793
+          },
+          {
+            "itemId": "lamp-glow-pendant",
+            "x": 2,
+            "z": 1.8,
+            "rot": 0,
+            "colorId": "brass"
+          },
+          {
+            "itemId": "dresser-rau",
+            "x": 0.24,
+            "z": 2,
+            "rot": 1.5707963267948966,
+            "colorId": "walnut"
+          },
+          {
+            "itemId": "plant-fiddle",
+            "x": 3.6,
+            "z": 3.2,
+            "rot": 0
+          },
+          {
+            "itemId": "art-horizon",
+            "x": 0.015,
+            "z": 2,
+            "rot": 1.5707963267948966
+          }
+        ]
+      }
+    }
+  },
+  {
+    "kind": "showroom",
+    "spec": {
+      "id": "office-focus",
+      "name": {
+        "en": "Focused home office",
+        "th": "ห้องทำงานที่บ้านเพื่อสมาธิ",
+        "zh": "专注的家庭办公室"
+      },
+      "area": 9.6,
+      "zones": [
+        {
+          "id": "room",
+          "kind": "room",
+          "name": {
+            "en": "Home office",
+            "th": "ห้องทำงาน",
+            "zh": "家庭办公室"
+          },
+          "polygon": [
+            [
+              -0.06,
+              -0.06
+            ],
+            [
+              3.2600000000000002,
+              -0.06
+            ],
+            [
+              3.2600000000000002,
+              3.06
+            ],
+            [
+              -0.06,
+              3.06
+            ]
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "at": [
+            1.5,
+            -0.06
+          ],
+          "width": 1.4,
+          "height": 1.3,
+          "sill": 0.9
+        },
+        {
+          "type": "door",
+          "at": [
+            2.475,
+            3.06
+          ],
+          "width": 0.85,
+          "height": 2.1
+        }
+      ],
+      "fixtures": [],
+      "ceiling": 2.6,
+      "showroom": {
+        "type": "home-office",
+        "description": {
+          "en": "Desk by the window, storage within reach.",
+          "th": "โต๊ะทำงานริมหน้าต่าง ที่เก็บของอยู่ใกล้มือ",
+          "zh": "窗边书桌，收纳触手可及。"
+        },
+        "thumbnail": "linear-gradient(135deg,#dde3ea,#7f98ad)",
+        "floor": {
+          "material": "carpet",
+          "color": "#d6c8b0"
+        },
+        "wall": {
+          "material": "paint",
+          "color": "#dde3ea"
+        },
+        "items": [
+          {
+            "itemId": "desk-plan",
+            "x": 1.5,
+            "z": 0.3,
+            "rot": 0
+          },
+          {
+            "itemId": "chair-sit",
+            "x": 1.5,
+            "z": 0.85,
+            "rot": 3.141592653589793
+          },
+          {
+            "itemId": "bookcase-stav",
+            "x": 2.95,
+            "z": 1.5,
+            "rot": -1.5707963267948966
+          },
+          {
+            "itemId": "lamp-dot-table",
+            "x": 0.2,
+            "z": 2.2,
+            "rot": 0
+          },
+          {
+            "itemId": "shelf-lift",
+            "x": 0.11,
+            "z": 1.5,
+            "rot": 1.5707963267948966
+          },
+          {
+            "itemId": "plant-fiddle",
+            "x": 0.3,
+            "z": 0.3,
+            "rot": 0,
+            "colorId": "white"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "kind": "showroom",
+    "spec": {
+      "id": "kids-play",
+      "name": {
+        "en": "Sunny kids room",
+        "th": "ห้องเด็กสดใส",
+        "zh": "阳光儿童房"
+      },
+      "area": 11.5,
+      "zones": [
+        {
+          "id": "room",
+          "kind": "room",
+          "name": {
+            "en": "Kids room",
+            "th": "ห้องเด็ก",
+            "zh": "儿童房"
+          },
+          "polygon": [
+            [
+              -0.06,
+              -0.06
+            ],
+            [
+              3.66,
+              -0.06
+            ],
+            [
+              3.66,
+              3.2600000000000002
+            ],
+            [
+              -0.06,
+              3.2600000000000002
+            ]
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "at": [
+            1.6,
+            -0.06
+          ],
+          "width": 1.2,
+          "height": 1.2,
+          "sill": 0.9
+        },
+        {
+          "type": "door",
+          "at": [
+            0.75,
+            3.2600000000000002
+          ],
+          "width": 0.9,
+          "height": 2.1
+        }
+      ],
+      "fixtures": [],
+      "ceiling": 2.6,
+      "showroom": {
+        "type": "kids",
+        "description": {
+          "en": "A single bed, open storage and room to play.",
+          "th": "เตียงเดี่ยว ชั้นเก็บของแบบเปิด และพื้นที่ให้เล่น",
+          "zh": "单人床、开放式收纳和玩耍空间。"
+        },
+        "thumbnail": "linear-gradient(135deg,#f5ecc8,#e0b75a)",
+        "floor": {
+          "material": "carpet",
+          "color": "#d6c8b0"
+        },
+        "wall": {
+          "material": "paint",
+          "color": "#f5ecc8"
+        },
+        "items": [
+          {
+            "itemId": "bed-solo-single",
+            "x": 1.025,
+            "z": 1.6,
+            "rot": 1.5707963267948966,
+            "colorId": "white"
+          },
+          {
+            "itemId": "bookcase-stav",
+            "x": 3.3,
+            "z": 1.6,
+            "rot": -1.5707963267948966,
+            "colorId": "white"
+          },
+          {
+            "itemId": "rug-tova",
+            "x": 2.2,
+            "z": 1.6,
+            "rot": 1.5707963267948966,
+            "colorId": "sage"
+          },
+          {
+            "itemId": "desk-plan",
+            "x": 2.4,
+            "z": 0.3,
+            "rot": 0,
+            "colorId": "white"
+          },
+          {
+            "itemId": "chair-sit",
+            "x": 2.4,
+            "z": 0.85,
+            "rot": 3.141592653589793,
+            "colorId": "white"
+          },
+          {
+            "itemId": "art-horizon",
+            "x": 2.4,
+            "z": 3.185,
+            "rot": 3.141592653589793
+          }
+        ]
+      }
+    }
+  }
+]
