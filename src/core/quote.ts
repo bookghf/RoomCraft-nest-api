@@ -1,3 +1,4 @@
+import { sortedMap } from '../db/models';
 import type { DItem, Doc } from '../db/models';
 import type { PublishedCatalog } from './catalog';
 
@@ -51,7 +52,7 @@ export function buildQuote(items: DItem[], cat: PublishedCatalog): Quote {
       const line: QuoteLine = { itemId: it.itemId } as QuoteLine;
       if (it.colorId) line.colorId = it.colorId;
       if (ci.sku) line.sku = ci.sku;
-      line.name = ci.name ?? null;
+      line.name = sortedMap(ci.name ?? null);
       line.quantity = 1;
       line.unitSatang = price;
       line.lineSatang = price;

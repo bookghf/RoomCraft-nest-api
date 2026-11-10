@@ -14,15 +14,19 @@ cd "$(dirname "$0")/../.."
 MONGO=${PARITY_MONGO:-mongodb://localhost:27018}
 if [ "$1" = stop ]; then
   for f in /tmp/parity-$2-go.pid /tmp/parity-$2-nest.pid; do [ -f $f ] && kill $(cat $f) 2>/dev/null || true; rm -f $f; done
+  # Also free the ports recorded at start, in case an older script version left servers behind.
+  [ -f /tmp/parity-$2.ports ] && for p in $(cat /tmp/parity-$2.ports); do lsof -ti tcp:$p -sTCP:LISTEN | xargs kill 2>/dev/null || true; done
   exit 0
 fi
 NAME=$1; GOPORT=$2; NESTPORT=$3
 : "${GOAPI:?set GOAPI to the Go API binary}"
 "$0" stop "$NAME"
+for p in $GOPORT $NESTPORT; do lsof -ti tcp:$p -sTCP:LISTEN | xargs kill 2>/dev/null || true; done
+echo "$GOPORT $NESTPORT" > /tmp/parity-$NAME.ports
 docker exec rc-parity-mongo mongosh --quiet --eval "db.getSiblingDB('parity_${NAME}_go').dropDatabase(); db.getSiblingDB('parity_${NAME}_nest').dropDatabase()" >/dev/null
 
 common() {
-  env -i PATH="$PATH" HOME="$HOME" \
+  exec env -i PATH="$PATH" HOME="$HOME" \
     MONGO_URI="$MONGO" AUTH_DEV=true JWT_SECRET=parity-jwt-secret \
     ADMIN_JWT_SECRET=parity-admin-secret-0123456789abcdef ADMIN_EMAIL=owner@parity.local ADMIN_PASSWORD='ChangeMe-2026!' \
     WRITES_PER_MINUTE=100000 SEED_ON_START=true SHARE_BASE_URL=https://example.test \

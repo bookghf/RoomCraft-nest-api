@@ -3,7 +3,7 @@
 import type { Request } from 'express';
 import type { Collection, Filter, Sort } from 'mongodb';
 import { db } from '../db/mongo';
-import { Doc } from '../db/models';
+import { Doc, deepSorted } from '../db/models';
 import { randomID } from './ids';
 import { clientIP } from './http';
 import { goJSONReplacer } from './json';
@@ -67,7 +67,11 @@ export function diffJSON(before: unknown, after: unknown): Changes | null {
   for (const [k, bv] of Object.entries(b)) {
     if (!(k in a)) changes[k] = { from: bv, to: null };
   }
-  return Object.keys(changes).length === 0 ? null : changes;
+  if (Object.keys(changes).length === 0) return null;
+  // Go writes the changes map, and maps inside the values, with sorted keys.
+  const sorted: Changes = {};
+  for (const k of Object.keys(changes).sort()) sorted[k] = { from: deepSorted(changes[k].from), to: deepSorted(changes[k].to) };
+  return sorted;
 }
 
 // ---- Paging for back office tables ----

@@ -43,16 +43,49 @@ export function compact<T extends Doc>(o: T, keys: string[]): T {
   return o;
 }
 
+// ---- Map key order ----
+//
+// Go writes struct fields in declaration order but map keys sorted. Text values
+// ({"en", "th", "zh"}) and model params are maps, and Go stores them in random order,
+// so sort them on the way out.
+
+/** A map with its keys sorted, like Go's JSON encoding of map[string]T. */
+export function sortedMap<T>(m: T): T {
+  if (!m || typeof m !== 'object' || Array.isArray(m) || m instanceof Date) return m;
+  const o: Doc = {};
+  for (const k of Object.keys(m as Doc).sort()) o[k] = (m as Doc)[k];
+  return o as T;
+}
+
+/** Sorts every object's keys, recursively (Go's encoding of map[string]any decoded from JSON/BSON). */
+export function deepSorted<T>(v: T): T {
+  if (Array.isArray(v)) return v.map(deepSorted) as T;
+  if (!v || typeof v !== 'object' || v instanceof Date) return v;
+  const o: Doc = {};
+  for (const k of Object.keys(v as Doc).sort()) o[k] = deepSorted((v as Doc)[k]);
+  return o as T;
+}
+
+/** A stored PlanSpec with its Text maps sorted (name, zone names, showroom description). */
+export function specOut(spec: Doc | null | undefined): Doc | null {
+  if (!spec) return null;
+  const o: Doc = { ...spec };
+  if (o.name) o.name = sortedMap(o.name);
+  if (Array.isArray(o.zones)) o.zones = o.zones.map((z: Doc) => (z && z.name ? { ...z, name: sortedMap(z.name) } : z));
+  if (o.showroom?.description) o.showroom = { ...o.showroom, description: sortedMap(o.showroom.description) };
+  return o;
+}
+
 // ---- Catalog ----
 
 export function categoryOut(c: Doc): Doc {
-  const o: Doc = { id: c._id, name: c.name ?? null };
+  const o: Doc = { id: c._id, name: sortedMap(c.name ?? null) };
   putOmit(o, 'icon', c.icon);
   return o;
 }
 
 export function colorOut(c: Doc): Doc {
-  return { id: c.id ?? '', hex: c.hex ?? '', name: c.name ?? null };
+  return { id: c.id ?? '', hex: c.hex ?? '', name: sortedMap(c.name ?? null) };
 }
 
 /** A catalog item as clients see it. price (baht) is derived from priceSatang. */
@@ -62,7 +95,7 @@ export function itemOut(it: Doc): Doc {
     id: it._id,
     category: it.category ?? '',
     mount: it.mount ?? '',
-    name: it.name ?? null,
+    name: sortedMap(it.name ?? null),
     price: satang / 100,
     priceSatang: satang,
   };
@@ -75,7 +108,7 @@ export function itemOut(it: Doc): Doc {
   putPtr(o, 'mountHeight', it.mountHeight);
   putOmit(o, 'light', it.light);
   const model: Doc = { template: it.model?.template ?? '' };
-  putOmit(model, 'params', it.model?.params);
+  putOmit(model, 'params', deepSorted(it.model?.params));
   o.model = model;
   putOmit(o, 'modelUrl', it.modelUrl);
   putOmit(o, 'thumbnailUrl', it.thumbnailUrl);
@@ -210,13 +243,13 @@ export function planOut(p: Doc): Doc {
   const o: Doc = { id: p.planId, version: p.version ?? 0, kind: p.kind ?? '' };
   putOmit(o, 'roomType', p.roomType);
   putOmit(o, 'projectId', p.projectId);
-  o.spec = p.spec ?? null;
+  o.spec = specOut(p.spec);
   o.publishedAt = p.publishedAt ?? ZERO_TIME;
   return o;
 }
 
 export function roomTypeOut(rt: Doc): Doc {
-  return { id: rt._id, name: rt.name ?? null, blurb: rt.blurb ?? null, gradient: rt.gradient ?? '' };
+  return { id: rt._id, name: sortedMap(rt.name ?? null), blurb: sortedMap(rt.blurb ?? null), gradient: rt.gradient ?? '' };
 }
 
 // ---- Designs ----
